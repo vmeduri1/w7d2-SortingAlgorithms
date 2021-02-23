@@ -12,9 +12,10 @@ function bubbleSort(array) {
   let swapped = true;
   while(swapped) {
     swapped = false;
-    for (let i = 1; i < n - 1; i++) {
+    for (let i = 1; i <= n - 1; i++) {
       if (array[i - 1] > array[i]) {
         swap(array, i - 1, i);
+        console.log(array);
         swapped = true;
       }
     }
